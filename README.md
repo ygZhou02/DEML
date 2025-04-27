@@ -25,9 +25,7 @@ In this paper, to validate the severity of privacy threats in LLM collaborative 
 
 ## 🚩 Getting Started
 
-The project allows you to run model inversion on LLMs (like Llama models) to analyze their internal representations. The inversion process helps understand how these models process and represent information internally.
-
-The following is a step-by-step guide:
+The project allows you to run prompt inversion attacks on LLMs. The inversion method can work across a variety of LLM architectures, even on LoRA model. The following is a step-by-step guide:
 
 ### ⚙️ Environment Setup
 
@@ -56,6 +54,8 @@ Script to run inversion:
 mkdir results
 python invert.py --base-model-name huggyllama/llama-65b --dataset-path skytrax-reviews-dataset/data/airline.csv --dataset-type github --dataset-len 100 --num-invert-layers 60 --output-dir results/65B-airline-60layer-results
 ```
+
+You can run on LoRA model by configuring lora_model_path.
 
 ### Key Parameters
 
