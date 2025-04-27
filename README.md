@@ -7,7 +7,6 @@
 
 <a href='https://arxiv.org/abs/2503.09022'><img src='https://img.shields.io/badge/ArXiv-2503.09022-red'></a>
 <a href='https://github.com/ygZhou02/DEML.git'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=ygZhou02.DEML)
 
 </div>
 
@@ -54,6 +53,7 @@ git clone https://github.com/quankiquanki/skytrax-reviews-dataset.git
 Script to run inversion:
 
 ```bash
+mkdir results
 python invert.py --base-model-name huggyllama/llama-65b --dataset-path skytrax-reviews-dataset/data/airline.csv --dataset-type github --dataset-len 100 --num-invert-layers 60 --output-dir results/65B-airline-60layer-results
 ```
 
